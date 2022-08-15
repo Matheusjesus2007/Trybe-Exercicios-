@@ -4,15 +4,38 @@ ol {
 
 .impar-maiusculo {
     text-transform: uppercase;
+    
 }
 
 .par-verde {
     color: green;
+    
 }
 
 h1, h2 {
-   color: red; 
-   font-size: 40px;
+   color: red;
+   }
+h1 em {
+    font-size: 40px;
    border: 1px solid black;
 }
 
+
+li {
+    font-size: 20px;
+}
+
+li em {
+    
+    font-weight: 800;
+} 
+
+.azul {   
+    background-color: blue;
+   
+}
+
+.rosa {
+    background-color: pink
+    ;
+}
