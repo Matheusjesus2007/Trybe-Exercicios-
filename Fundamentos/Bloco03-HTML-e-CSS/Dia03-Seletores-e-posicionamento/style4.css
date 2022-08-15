@@ -1,0 +1,54 @@
+.primaria:hover {
+    border: 5px;
+    border-style: solid;
+    border-color: black;
+}
+
+.secundaria:hover {
+    border: 5px;
+    border-style: solid;
+    border-color: red;
+}
+
+.complementar:hover {
+    border: 5px;
+    border-style: solid;
+    border-color: orange;
+}
+
+.escura:hover {
+    border: 5px;
+    border-style: solid;
+    border-color: blue;
+}
+
+.clara:hover {
+    border: 5px;
+    border-style: solid;
+    border-color: bisque;
+}
+
+.primaria {
+    font-size: 30px;
+    font-style: italic;
+}
+
+.secundaria{
+    font-size: 25px;
+}
+
+.complementar{
+    font-size: 50px;
+    font-style: italic;
+    
+}
+
+.escura{
+    font-size: 15px;
+}
+
+.clara{
+    font-size: 10px;
+    font-style: italic;
+}
+
