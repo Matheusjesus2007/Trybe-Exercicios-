@@ -1,0 +1,11 @@
+ol {
+    background-color: yellow;
+} 
+
+.impar-maiusculo {
+    text-transform: uppercase;
+}
+
+.par-verde {
+    color: green;
+}
