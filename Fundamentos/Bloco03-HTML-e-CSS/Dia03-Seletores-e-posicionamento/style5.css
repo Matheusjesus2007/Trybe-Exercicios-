@@ -29,13 +29,23 @@ li em {
     
     font-weight: 800;
 } 
-
-.azul {   
+ul.prog li:nth-child(1){
     background-color: blue;
-   
 }
 
-.rosa {
-    background-color: pink
-    ;
+ul.prog li:nth-child(2){
+    background-color: blue;
+
+}
+
+ul.prog li:nth-child(3){
+    background-color: blue;
+}
+
+ul.prog li:nth-child(2){
+    background-color: pink;
+}
+
+ul.prog li:nth-child(3){
+    background-color: pink;
 }

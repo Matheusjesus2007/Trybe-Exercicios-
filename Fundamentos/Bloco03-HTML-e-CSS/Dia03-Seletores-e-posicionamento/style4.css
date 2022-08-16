@@ -28,9 +28,15 @@
     border-color: bisque;
 }
 
+
+
+h3:nth-child(odd){
+    font-style: italic;
+}
+
 .primaria {
     font-size: 30px;
-    font-style: italic;
+    
 }
 
 .secundaria{
@@ -39,7 +45,7 @@
 
 .complementar{
     font-size: 50px;
-    font-style: italic;
+   
     
 }
 
@@ -49,6 +55,5 @@
 
 .clara{
     font-size: 10px;
-    font-style: italic;
+   
 }
-
