@@ -1,0 +1,51 @@
+ol {
+    background-color: yellow;
+} 
+
+.impar-maiusculo {
+    text-transform: uppercase;
+    
+}
+
+.par-verde {
+    color: green;
+    
+}
+
+h1, h2 {
+   color: red;
+   }
+h1 em {
+    font-size: 40px;
+   border: 1px solid black;
+}
+
+
+li {
+    font-size: 20px;
+}
+
+li em {
+    
+    font-weight: 800;
+} 
+ul.prog li:nth-child(1){
+    background-color: blue;
+}
+
+ul.prog li:nth-child(2){
+    background-color: blue;
+
+}
+
+ul.prog li:nth-child(3){
+    background-color: blue;
+}
+
+ul.prog li:nth-child(2){
+    background-color: pink;
+}
+
+ul.prog li:nth-child(3){
+    background-color: pink;
+}
