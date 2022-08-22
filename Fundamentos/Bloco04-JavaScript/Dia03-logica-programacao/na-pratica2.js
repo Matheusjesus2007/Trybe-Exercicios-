@@ -1,4 +1,4 @@
-/*l let word = 'Matheus';
+/*  let word = 'Matheus';
 let newWord = '';
 
 for (index = 0; index < word.length; index +=1) {
@@ -7,7 +7,7 @@ for (index = 0; index < word.length; index +=1) {
 
 }  
 console.log(newWord) 
-*/
+ */
 
 
 let word = 'Matheus';
@@ -21,4 +21,4 @@ for (index = word.length - 1; index >= 0; index-=1) {
 }
 
 
-console.log(newWord) 
+console.log(newWord)  
