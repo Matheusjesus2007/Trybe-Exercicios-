@@ -1,7 +1,10 @@
-let reverso = '';
-let word = '';
+
 
 function palindromo (palavra) {
+    let reverso = '';
+    let word = '';
+
+
   for (index = palavra.length -1; index >= 0; index -=1) {
     reverso += palavra[index]
   }
@@ -17,4 +20,4 @@ function palindromo (palavra) {
 }
 
 
-palindromo('asa')
+palindromo('erasda')
