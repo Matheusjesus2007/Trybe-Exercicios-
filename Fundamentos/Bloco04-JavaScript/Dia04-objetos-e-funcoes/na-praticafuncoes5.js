@@ -1,5 +1,5 @@
-function maiorArray (numeros = []) {
-    let repetido = 0;
+function inteiroMaisRetido (numeros = []) {
+    let repetidoMaisX = 0;
     let contador = 0;
     let contador1 = 0;
     for (index = 0; index < numeros.length; index +=1){
@@ -9,13 +9,13 @@ function maiorArray (numeros = []) {
               contador += 1;    
         }
         if (contador > contador1) {
-            repetido = numeros[index];
+            repetidoMaisX = numeros[index];
             contador1 = contador;
         }
 
         contador = 0;
     }
-        console.log(repetido)
+        console.log(repetidoMaisX)
 }
 
-maiorArray( [2, 3, 2, 5, 8, 2, 3])
+inteiroMaisRetido( [2, 3, 2, 5, 8, 2, 3])
