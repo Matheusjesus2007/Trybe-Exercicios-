@@ -66,7 +66,6 @@
       newElement1.className = 'main-content';
       elementBody.appendChild(newElement1);
         
-      
       let elementMain = document.getElementsByTagName('main')[0];
       let newElement2 = document.createElement('section');
       newElement2.className = 'center-content';  
@@ -77,6 +76,42 @@
       newElement3.innerText = 'Meu nome não é Jonny Mr Jonny';  
       elementSection.appendChild(newElement3);
 
+      let newElement4 = document.createElement('section');
+      newElement4.className = 'left-content';  
+      elementMain.appendChild(newElement4);
+
+      let newElement5 = document.createElement('section');
+      newElement5.className = 'right-content';  
+      elementMain.appendChild(newElement5);
+
+      let elementSection1 = document.getElementsByTagName('section')[1];
+      let newElement6 = document.createElement('img');
+      newElement6['src'] = 'https://picsum.photos/200'
+      newElement6.className = 'small-image';
+      elementSection1.appendChild(newElement6)
+    
+      let elementSection2 = document.getElementsByTagName('section')[2];
+      let newElement7 = document.createElement('ul');
+      elementSection2.appendChild(newElement7)  
+
+      let elementeLista = document.getElementsByTagName('ul')[0]
+      for(index = 1; index <= 10; index += 1) {
+        list = document.createElement('li')
+        list.innerText = index
+        elementeLista.appendChild(list)  
+      }
+    
+
+      for(index = 1; index <= 3; index += 1) {
+     let newElement8 = document.createElement('h3');
+     elementMain.appendChild(newElement8)
+      }
+      
+   
+        
+    
+     
+        
 
 
         
