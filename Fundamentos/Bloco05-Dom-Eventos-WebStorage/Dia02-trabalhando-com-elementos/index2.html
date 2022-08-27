@@ -60,6 +60,7 @@
         
       let elementBody = document.querySelector('body');
       let newElement = document.createElement('h1');
+      newElement.innerText = ' Exercício 5.2 - JavaScript DOM';
       elementBody.appendChild(newElement);
             
       let newElement1 = document.createElement('main');
@@ -82,6 +83,7 @@
 
       let newElement5 = document.createElement('section');
       newElement5.className = 'right-content';  
+        newElement5.style.marginRight = 'auto'
       elementMain.appendChild(newElement5);
 
       let elementSection1 = document.getElementsByTagName('section')[1];
@@ -96,7 +98,7 @@
 
       let elementeLista = document.getElementsByTagName('ul')[0]
       for(index = 1; index <= 10; index += 1) {
-        list = document.createElement('li')
+       let list = document.createElement('li')
         list.innerText = index
         elementeLista.appendChild(list)  
       }
@@ -104,16 +106,19 @@
 
       for(index = 1; index <= 3; index += 1) {
      let newElement8 = document.createElement('h3');
+     newElement8.className = 'description';
      elementMain.appendChild(newElement8)
       }
       
-   
-        
-    
-     
-        
+    newElement.className = 'title';
 
+    elementMain.removeChild(newElement4)
+    elementMain.style.backgroundColor = 'green'
 
+    let list = document.getElementsByTagName('li')
+    elementeLista.removeChild(list[9])
+    elementeLista.removeChild(list[8])
+        
         
         </script>
   </body>
