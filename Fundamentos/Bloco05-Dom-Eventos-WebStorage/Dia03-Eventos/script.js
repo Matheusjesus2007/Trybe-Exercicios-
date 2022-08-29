@@ -31,3 +31,24 @@ function createDaysOfTheWeek() {
     dias.innerText = decemberDaysList[index]
     mes.appendChild(dias)  
   }
+
+/*  Implemente uma função que crie dinamicamente um botão com o nome "Feriados".
+Sua função deve receber um parâmetro com a string 'Feriados'
+Adicione a este botão a ID "btn-holiday"
+Adicione este botão como filho/filha da tag <div> com classe "buttons-container" */
+
+
+function buttonFeriado (entrada) {
+  let divButton = document.getElementsByClassName('buttons-container')[0]
+  var button = document.createElement('button')
+  button.id = 'btn-holiday';
+  button.innerText = entrada
+  divButton.appendChild(button);
+}
+buttonFeriado('Feriado')
+
+
+
+
+
+
