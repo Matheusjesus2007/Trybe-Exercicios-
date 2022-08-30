@@ -71,3 +71,17 @@ function txtSexta () {
     }
   }
 }
+
+let diaAll = document.getElementsByClassName('days');
+for (let index = 0; index < diaAll.length; index += 1) {
+diaAll[index].addEventListener('mouseover', diaZoom);
+
+function diaZoom() {
+diaAll[index].style.transform = 'scale(2)'
+}
+
+diaAll[index].addEventListener('mouseout', diaZoomOut);
+function diaZoomOut() {
+  diaAll[index].style.transform = ''
+  }
+}
