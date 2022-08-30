@@ -31,11 +31,11 @@ function createDaysOfTheWeek() {
 
 function buttonFeriado (entrada) {
   let divButton = document.getElementsByClassName('buttons-container')[0];
-  var button = document.createElement('button');
-  button.id = 'btn-holiday';
-  button.innerText = entrada;
-  divButton.appendChild(button);
-  button.addEventListener('click', corHoliday)
+  let buttonFeriados = document.createElement('button');
+  buttonFeriados.id = 'btn-holiday';
+  buttonFeriados.innerText = entrada;
+  divButton.appendChild(buttonFeriados);
+  buttonFeriados.addEventListener('click', corHoliday)
 }
 buttonFeriado('Feriado')
 
@@ -49,3 +49,12 @@ classeFeriados[index].style.backgroundColor = 'rgb(238,238,238)';
     }
   }
 }
+
+function buttonSexta (entrada1) {
+  let divButton = document.getElementsByClassName('buttons-container')[0];
+  let buttonSextas = document.createElement('button');
+  buttonSextas.id = 'btn-friday';
+  buttonSextas.innerText = entrada1;
+  divButton.appendChild(buttonSextas);
+}
+buttonSexta('Sexta-feira')
