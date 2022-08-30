@@ -12,7 +12,9 @@ function createDaysOfTheWeek() {
   };
   
   createDaysOfTheWeek();
-  
+
+
+  // Exercício 1 
   let mes = document.getElementById('days')
   let decemberDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
     
@@ -29,6 +31,7 @@ function createDaysOfTheWeek() {
     mes.appendChild(dias)  
   }
 
+ // Exercício 2 
 function buttonFeriado (entrada) {
   let divButton = document.getElementsByClassName('buttons-container')[0];
   let buttonFeriados = document.createElement('button');
@@ -39,6 +42,7 @@ function buttonFeriado (entrada) {
 }
 buttonFeriado('Feriado')
 
+// Exercício 3
 function corHoliday () {
 let classeFeriados = document.querySelectorAll('.holiday');
 for (index = 0; index < classeFeriados.length; index += 1) {
@@ -50,6 +54,7 @@ classeFeriados[index].style.backgroundColor = 'rgb(238,238,238)';
   }
 }
 
+// Exercício 4
 function buttonSexta (entrada1) {
   let divButton = document.getElementsByClassName('buttons-container')[0];
   let buttonSextas = document.createElement('button');
@@ -60,6 +65,7 @@ function buttonSexta (entrada1) {
 }
 buttonSexta('Sexta-feira')
 
+// Exercício 5
 function txtSexta () {
   let sextasoriginais = [4, 11, 18, 25];
   let classeSexta = document.querySelectorAll('.friday');
@@ -72,6 +78,7 @@ function txtSexta () {
   }
 }
 
+//Exercício 6
 let diaAll = document.getElementsByClassName('days');
 for (let index = 0; index < diaAll.length; index += 1) {
 diaAll[index].addEventListener('mouseover', diaZoom);
@@ -85,3 +92,16 @@ function diaZoomOut() {
   diaAll[index].style.transform = ''
   }
 }
+
+// Exercício 7
+function myTarefas (recebe) {
+let tarefas = document.getElementsByClassName('my-tasks')[0];
+let minhasTarefas = document.createElement('span');
+minhasTarefas.innerText = recebe;
+tarefas.appendChild(minhasTarefas);
+
+}
+myTarefas('cozinhar')
+
+
+
