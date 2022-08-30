@@ -103,5 +103,27 @@ tarefas.appendChild(minhasTarefas);
 }
 myTarefas('cozinhar')
 
+// Exercício 8
+function corTask (recebe) {
+let tarefas = document.getElementsByClassName('my-tasks')[0];
+let  corTarefas = document.createElement('div')
+corTarefas.className = 'task';
+corTarefas.style.backgroundColor = recebe;
+tarefas.appendChild(corTarefas)
+
+}
+corTask('green')
+
+// Exercício 9
+let selectTarefa = document.getElementsByClassName('task')[0];
+selectTarefa.addEventListener('click', selectTask);
+
+function selectTask () {
+  if (selectTarefa.className == 'task') {
+selectTarefa.className = 'task selected';
+} else {
+  selectTarefa.className = 'task';
+}
+}
 
 
