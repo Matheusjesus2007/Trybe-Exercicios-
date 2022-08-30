@@ -13,9 +13,6 @@ function createDaysOfTheWeek() {
   
   createDaysOfTheWeek();
   
-  /* let ulDias = document.getElementsByTagName('ul')
-  ulDias.id = "days" */
-
   let mes = document.getElementById('days')
   let decemberDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
     
@@ -32,23 +29,23 @@ function createDaysOfTheWeek() {
     mes.appendChild(dias)  
   }
 
-/*  Implemente uma função que crie dinamicamente um botão com o nome "Feriados".
-Sua função deve receber um parâmetro com a string 'Feriados'
-Adicione a este botão a ID "btn-holiday"
-Adicione este botão como filho/filha da tag <div> com classe "buttons-container" */
-
-
 function buttonFeriado (entrada) {
-  let divButton = document.getElementsByClassName('buttons-container')[0]
-  var button = document.createElement('button')
+  let divButton = document.getElementsByClassName('buttons-container')[0];
+  var button = document.createElement('button');
   button.id = 'btn-holiday';
-  button.innerText = entrada
+  button.innerText = entrada;
   divButton.appendChild(button);
+  button.addEventListener('click', corHoliday)
 }
 buttonFeriado('Feriado')
 
-
-
-
-
-
+function corHoliday () {
+let classeFeriados = document.querySelectorAll('.holiday');
+for (index = 0; index < classeFeriados.length; index += 1) {
+if (classeFeriados[index].style.backgroundColor == 'yellow') { 
+classeFeriados[index].style.backgroundColor = 'rgb(238,238,238)';
+} else {
+  classeFeriados[index].style.backgroundColor = 'yellow';
+    }
+  }
+}
