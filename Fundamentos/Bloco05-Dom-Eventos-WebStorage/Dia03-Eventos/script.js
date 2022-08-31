@@ -144,4 +144,28 @@ function selectedDay() {
 } 
 }
 
-/* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);  */
+// Bonus 
+const buttonAdd = document.getElementById('btn-add');
+const inputCompro = document.getElementById('task-input');
+
+function addCompromisso () {
+let compromisso = document.getElementsByTagName('h3')[1];
+if (inputCompro.value == '' ) {
+ alert('Atenção! não é possível adicionar um compromisso vazio');
+} else {
+let listCompromisso = document.createElement('li');
+let addMyCompromisso = inputCompro.value;
+listCompromisso.innerText = addMyCompromisso
+compromisso.appendChild(listCompromisso)
+}
+}
+
+buttonAdd.addEventListener('click', addCompromisso);
+document.addEventListener('keypress', function(e) {
+  if (inputCompro.value == '' ) {
+  } else if (e.key === 'Enter'){
+    buttonAdd.click();
+  }
+    
+  }
+)
