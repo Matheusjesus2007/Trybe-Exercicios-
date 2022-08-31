@@ -97,6 +97,7 @@ function diaZoomOut() {
 function myTarefas (recebe) {
 let tarefas = document.getElementsByClassName('my-tasks')[0];
 let minhasTarefas = document.createElement('span');
+let minhasTarefas1 = document.createElement('span');
 minhasTarefas.innerText = recebe;
 tarefas.appendChild(minhasTarefas);
 
@@ -104,15 +105,15 @@ tarefas.appendChild(minhasTarefas);
 myTarefas('cozinhar')
 
 // Exercício 8
-function corTask (recebe) {
+function corTask () {
 let tarefas = document.getElementsByClassName('my-tasks')[0];
 let  corTarefas = document.createElement('div')
 corTarefas.className = 'task';
-corTarefas.style.backgroundColor = recebe;
+
 tarefas.appendChild(corTarefas)
 
 }
-corTask('green')
+corTask()
 
 // Exercício 9
 let selectTarefa = document.getElementsByClassName('task')[0];
@@ -121,9 +122,26 @@ selectTarefa.addEventListener('click', selectTask);
 function selectTask () {
   if (selectTarefa.className == 'task') {
 selectTarefa.className = 'task selected';
+selectTarefa.style.backgroundColor = 'red'
 } else {
   selectTarefa.className = 'task';
+  selectTarefa.style.backgroundColor = ''
 }
 }
 
+// Exercício 10
+let diaAll2 = document.getElementsByClassName('days');
+for (let index = 0; index < diaAll2.length; index += 1) {
+diaAll2[index].addEventListener('click', selectedDay);
 
+function selectedDay() {
+  if (diaAll2[index].style.backgroundColor !== selectTarefa.style.backgroundColor) {
+  diaAll2[index].style.backgroundColor = selectTarefa.style.backgroundColor;
+  
+} else {
+  diaAll2[index].style.backgroundColor = '';
+}
+} 
+}
+
+/* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);  */
