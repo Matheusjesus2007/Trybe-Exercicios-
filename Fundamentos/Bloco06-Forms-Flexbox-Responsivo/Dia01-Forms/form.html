@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-4.5.3-dist/css/bootstrap.min.css">
+    <script src="jquery-3.6.1.min.js"></script>
+    <script src="bootstrap-4.5.3-dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <header>Trybe Trip</header>
+    <form action="">        
+        <label for="">Nome:</label>
+        <input class="form-control"  type="text" maxlength="40" minlength="10" required id="nome">         
+        <br>
+        
+        <label for="">Email:</label>
+        <input class="form-control" type="email" maxlength="50" minlength="5" required id="email">
+        <br>
+        
+        <input class="form-control" type="radio" name="opcoes">
+        <label for="opcoes">Chapada Diamantina</label>
+        
+        <input class="form-control" type="radio" name="opcoes">
+        <label for="opcoes">Fernando de noronha </label>
+        
+        <input class="form-control" type="radio" name="opcoes">
+        <label for="opcoes">Maragogi</label>
+
+        <input class="form-control" type="radio" name="opcoes">
+        <label for="opcoes">jericoacoara</label>     
+        <br>
+
+        <label for="">Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTripa</label>
+        <br>
+        
+        <textarea class="form-control" name="" cols="30" rows="10" maxlength="500" required id="textarea"></textarea>
+        <br>
+
+        <label for="">Data:</label>
+        <input class="form-control" type="date" id="calendario-date">
+        <br>
+        <label for="">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?1</label>
+        <input class="form-control" type="checkbox">
+        <br>
+        <label for="">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</label>
+        <input class="form-control" type="checkbox" required>
+        <br>
+
+        <button class="btn btn-success" type="submit" id="btt-Enviar">Enviar</button>
+        <button type="reset">Apagar</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
