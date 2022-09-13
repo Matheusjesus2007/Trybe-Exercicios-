@@ -1,0 +1,51 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  @media screen and (min-width: 1920px) {
+    header {
+        border: solid black 1px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    header p {
+        border: solid black 1px;
+        font-size: 100px;
+    }
+
+    header nav {
+        border: solid black 1px;
+        font-size: 40px;
+    }
+
+    #container-aside {
+        border: solid black 1px;
+        display: flex;    
+        flex-direction: row-reverse;
+        justify-content: space-around;
+    }
+
+    .aside-one {
+        font-size: 40px;
+    }
+
+    .aside-two {
+        font-size: 60px;
+    }
+
+    .aside-one h2 {
+        font-size: 80px;
+    }
+
+    .aside-two h2 {
+        font-size: 90px;
+    }
+
+  }
+
+  
