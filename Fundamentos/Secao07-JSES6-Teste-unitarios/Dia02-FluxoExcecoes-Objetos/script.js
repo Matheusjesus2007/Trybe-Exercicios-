@@ -12,7 +12,7 @@
         throw new Error('Os valores precisam ser maior que ZERO')
     }
 } catch (erro) {
-    console.log(erro.message);
+    document.getElementById('result').innerHTML = (erro.message);
 }
     }
     window.onload = () => {
