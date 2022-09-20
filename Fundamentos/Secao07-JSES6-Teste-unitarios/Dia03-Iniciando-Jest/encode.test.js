@@ -3,11 +3,11 @@ const {encode, decode} = require('./encode')
 
 
 test('Teste se encode e decode são funções;', () => {
-    expect(encode)
+    expect(typeof encode).toBe('function');
 })
 
 test('Teste se encode e decode são funções;', () => {
-    expect(decode)
+    expect(typeof decode).toBe('function');
 })
 
 test('teste se as vogais a, e, i, o, u são convertidas em 1, 2, 3, 4 e 5, respectivamente', () => {
