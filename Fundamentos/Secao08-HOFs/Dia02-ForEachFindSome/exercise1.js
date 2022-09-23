@@ -76,11 +76,18 @@ return resultado;
 
 console.log(findTheBook(books))
 
-/* console.log(books[4].author.birthYear)
- console.log(books[4].author.name)  */
- 
-/* 
- if(myarray[4].author.birthYear === 1947) {
-    return myarray[4].name
-  }      
-  return 'nao achei'   */
+function smallerName(buscaMinBook) {
+    let nameBook;
+    let minBook = Number.MAX_VALUE;
+
+    buscaMinBook.forEach(buscaMinBook => {
+       if(buscaMinBook.name.length < minBook) {
+        nameBook = buscaMinBook.name
+        minBook = buscaMinBook.name.length
+       }
+    })  
+    
+    return nameBook;
+  }
+
+  console.log(smallerName(books))
