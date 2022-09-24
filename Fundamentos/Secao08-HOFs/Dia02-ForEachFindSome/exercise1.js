@@ -86,8 +86,70 @@ function smallerName(buscaMinBook) {
         minBook = buscaMinBook.name.length
        }
     })  
-    
+
     return nameBook;
   }
 
   console.log(smallerName(books))
+
+
+
+/* 
+  function getNamedBook(busca26) {
+   let resultado;
+
+   busca26.find( (busca26) => {    
+ if (busca26.name.length === 26) {
+   resultado = busca26
+    } 
+})
+return resultado;
+  }
+
+  console.log(getNamedBook(books))
+
+
+  
+  
+function booksOrderedByReleaseYearDesc(decrescente) {
+    decrescente.sort((a, b) => b.releaseYear - a.releaseYear)
+    return books
+  }
+
+  
+  console.log(booksOrderedByReleaseYearDesc(books))  */
+
+  
+ 
+ const everyoneWasBornOnSecXX = (buscaXX) => {
+        return buscaXX.author.birthYear > 1901 && buscaXX.author.birthYear < 2000; 
+ }
+
+ console.log(books.every(everyoneWasBornOnSecXX))
+
+ 
+
+const someBookWasReleaseOnThe80s = (buscaXX) => {
+    return buscaXX.releaseYear >= 1980 && buscaXX.releaseYear <= 1989;   
+}
+console.log(books.some(someBookWasReleaseOnThe80s))
+
+let nascimentos = [];
+let repetidos = {}
+
+
+const authorUnique = (buscaRepetidos) => { buscaRepetidos.forEach((buscaRepetidos) => {
+  nascimentos.push(buscaRepetidos.author.birthYear)
+})
+nascimentos.forEach((repetido) => {
+repetidos[repetido] = (repetidos[repetido] || 0) +1;
+})   
+
+const maxVal = Math.max(...Object.values(repetidos))
+if (maxVal > 1) {
+    return false
+}
+return true
+}
+
+console.log(authorUnique(books))
