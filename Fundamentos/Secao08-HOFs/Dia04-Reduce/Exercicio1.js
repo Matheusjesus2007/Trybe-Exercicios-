@@ -6,12 +6,13 @@ const arrays = [
   
   function flatten(arrays) {
     let resultado;
+    let teste = [];
     arrays.reduce((acc, cur) => {
      resultado = acc + ' ' + cur;
      return resultado
     })
-
-    return resultado;
+    teste.push(resultado)
+    return teste;
   }
 
   console.log(flatten(arrays))
