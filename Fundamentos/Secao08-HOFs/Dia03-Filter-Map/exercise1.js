@@ -84,3 +84,36 @@ return newArray;
 
 
 
+
+function oldBooksOrdered(livros) {
+const oldBooks = livros.filter((livro) => livro.releaseYear < 1962)
+
+    oldBooks.sort((a, b) => a.releaseYear - b.releaseYear)
+ return oldBooks
+  }
+
+
+
+  function fantasyOrScienceFictionAuthors(livros) {
+   const ficFantasia = livros.filter((livro) => (livro.genre === 'Ficção Científica' || livro.genre === 'Fantasia'))
+   const nomeCurrent = ficFantasia.map((livro) => livro.author.name )
+   nomeCurrent.sort()
+    return nomeCurrent;   
+  }
+
+
+  function oldBooks(livros) {
+    const oldBooks = livros.filter((livro) => livro.releaseYear < 1962)
+    const nomeFilme = oldBooks.map((livro) => livro.name)
+    return nomeFilme;
+  }
+
+
+
+  function authorWith3DotsOnName(livros) {
+   const iniciais = livros.filter((livro) => livro.author.name.split('.').length - 1 === 3)
+   return iniciais[0].name
+}
+
+console.log(authorWith3DotsOnName(books))
+
