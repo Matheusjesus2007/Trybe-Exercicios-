@@ -68,4 +68,19 @@ const books = [
 return `${livro.name} ${livro.genre} ${livro.author.name}` 
   })
 
-console.log(formatedBOoknames)
+
+
+const newArray = [];
+function nameAndAge (livros) {
+    livros.map((livro) => {
+    let currentIdade = 0;
+    currentIdade = ((livro.releaseYear) - (livro.author.birthYear))
+    newArray.push({age: currentIdade, author: livro.author.name})
+    return newArray;
+})
+newArray.sort((a, b) => a.age - b.age)
+return newArray;
+}
+
+
+
